@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 340" role="img" aria-labelledby="title desc">
+  <title id="title">kosmarkets logo</title>
+  <desc id="desc">A kosmarkets wordmark logo with kos in green and markets in dark charcoal black.</desc>
+  <defs>
+    <linearGradient id="kosGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9be047"/>
+      <stop offset="1" stop-color="#78c82f"/>
+    </linearGradient>
+    <linearGradient id="bladeGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a2e94b"/>
+      <stop offset="1" stop-color="#76c62e"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(30 34)">
+    <g fill="url(#kosGreen)">
+      <path d="M0 18C0 8.1 8.1 0 18 0h35c9.9 0 18 8.1 18 18v252H0z"/>
+      <path d="M88 122 226 0h89L174 124l154 146H229L88 136z"/>
+      <path d="M357 38c70 0 122 48 122 116s-52 116-122 116-122-48-122-116S287 38 357 38Zm0 62c-31 0-54 22-54 54s23 54 54 54 54-22 54-54-23-54-54-54z"/>
+      <path d="M583 38c62 0 105 26 119 70l-67 15c-7-19-25-29-54-29-27 0-43 8-43 23 0 17 20 21 74 28 62 9 100 27 100 75 0 50-47 50-118 50-69 0-116-27-128-78l69-13c7 24 27 35 60 35 30 0 49-8 49-24 0-17-20-22-72-28-61-8-101-27-101-75 0-47 45-49 112-49z"/>
+    </g>
+
+    <path d="M733 0h78v270h-78z" fill="url(#bladeGreen)"/>
+    <path d="M811 0v270l94-52V52z" fill="#8bd13e"/>
+    <path d="M811 52 905 0v52l-94 52z" fill="#a1e74b"/>
+    <path d="M811 218 905 166v52l-94 52z" fill="#73c42d"/>
+
+    <text x="930" y="224"
+      fill="#3b393d"
+      font-family="Arial Black, Montserrat, Poppins, Arial, Helvetica, sans-serif"
+      font-size="218"
+      font-weight="900"
+      letter-spacing="-14">markets</text>
+  </g>
+</svg>

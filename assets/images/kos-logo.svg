@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">KOS monogram logo</title>
+  <desc id="desc">A custom KOS three-letter logo with a warm gold to dark brown gradient.</desc>
+  <defs>
+    <linearGradient id="kosGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4a61f"/>
+      <stop offset="0.38" stop-color="#c98c24"/>
+      <stop offset="0.68" stop-color="#865f32"/>
+      <stop offset="1" stop-color="#342d25"/>
+    </linearGradient>
+    <linearGradient id="kosHighlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffbd38" stop-opacity="0.68"/>
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-18%" width="120%" height="136%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#5f4326" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" fill="#ffffff"/>
+
+  <g filter="url(#softShadow)" fill="url(#kosGold)">
+    <path d="M154 86h70v248h-70z"/>
+    <path d="M236 210 397 86h96L330 209l176 125h-105L236 218z"/>
+
+    <path fill-rule="evenodd" d="M536 86h154c94 0 170 54 190 132l-58 29c-4-72-55-119-131-119h-131c-61 0-111 49-111 110s50 110 111 110h132c74 0 126-44 131-113l58 29c-22 76-97 126-189 126H536c-96 0-174-68-174-152S440 86 536 86Zm30 72c-45 0-82 35-82 80s37 80 82 80h84c45 0 82-35 82-80s-37-80-82-80z"/>
+
+    <path d="M834 86h267l-44 72H862c-29 0-52 18-52 42 0 25 23 43 52 43h116c85 0 147 42 147 94 0 53-62 96-148 96H735l44-72h196c31 0 56-19 56-43s-25-43-56-43H859c-84 0-143-39-143-94 0-53 50-95 118-95z"/>
+  </g>
+
+  <g fill="url(#kosHighlight)" opacity="0.72">
+    <path d="M154 86h70v56h-70z"/>
+    <path d="M236 210 397 86h96L330 209l23 17c-41-6-79-10-117-16z"/>
+    <path d="M536 86h154c74 0 138 34 170 90-74-32-168-47-286-45-81 1-139 32-176 82 11-72 69-127 138-127z"/>
+    <path d="M834 86h267l-44 72H862c-29 0-52 18-52 42 0 5 1 10 4 15-44-16-78-27-96-34 0-53 49-95 116-95z"/>
+  </g>
+</svg>
