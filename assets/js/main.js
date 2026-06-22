@@ -2,6 +2,9 @@
   const header = document.getElementById('siteHeader');
   const menuToggle = document.getElementById('menuToggle');
   const mobileNav = document.getElementById('mobileNav');
+  const megaItems = document.querySelectorAll('.has-mega');
+  const mobileMenuGroups = document.querySelectorAll('.mobile-menu-group');
+  const footerMenuGroups = document.querySelectorAll('.footer-menu-group');
   const ticker = document.querySelector('.ticker-track');
   const revealTargets = document.querySelectorAll('.section, .market-card, .icon-card-grid article, .step-grid article');
 
@@ -32,6 +35,54 @@
 
   mobileNav.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', closeMenu);
+  });
+
+  mobileMenuGroups.forEach(function (group) {
+    const trigger = group.querySelector('.mobile-heading');
+
+    if (!trigger || trigger.tagName.toLowerCase() !== 'button') {
+      return;
+    }
+
+    trigger.addEventListener('click', function () {
+      const isExpanded = group.classList.toggle('is-expanded');
+      trigger.setAttribute('aria-expanded', String(isExpanded));
+    });
+  });
+
+  footerMenuGroups.forEach(function (group) {
+    const trigger = group.querySelector('.footer-menu-toggle');
+
+    if (!trigger) {
+      return;
+    }
+
+    trigger.addEventListener('click', function () {
+      const isExpanded = group.classList.toggle('is-expanded');
+      trigger.setAttribute('aria-expanded', String(isExpanded));
+    });
+  });
+
+  megaItems.forEach(function (item) {
+    item.addEventListener('mouseenter', function () {
+      item.classList.add('is-open');
+    });
+
+    item.addEventListener('mouseleave', function () {
+      item.classList.remove('is-open');
+    });
+
+    item.addEventListener('focusin', function () {
+      item.classList.add('is-open');
+    });
+
+    item.addEventListener('focusout', function () {
+      window.setTimeout(function () {
+        if (!item.contains(document.activeElement)) {
+          item.classList.remove('is-open');
+        }
+      }, 0);
+    });
   });
 
   if ('IntersectionObserver' in window) {
