@@ -5813,6 +5813,85 @@ a {
   background: #f4f7fa;
 }
 
+.privacy-main {
+  padding: 132px 0 96px;
+  background: #f4f7fa;
+}
+
+.privacy-card {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 52px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 14px 42px rgba(9, 24, 49, 0.07);
+}
+
+.privacy-card h1 {
+  max-width: 760px;
+  margin: 0 0 16px;
+  color: #071126;
+  font-size: clamp(38px, 4vw, 56px);
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.privacy-updated {
+  margin: 0 0 22px;
+  color: #82c844;
+  font-size: 14px;
+  line-height: 1.45;
+  font-weight: 800;
+}
+
+.privacy-lead {
+  max-width: 820px;
+  margin: 0 0 36px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.62;
+}
+
+.privacy-section-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.privacy-section-grid section,
+.privacy-contact {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfd;
+}
+
+.privacy-section-grid h2,
+.privacy-contact h2 {
+  margin: 0 0 10px;
+  color: #071126;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.privacy-section-grid p,
+.privacy-contact p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.privacy-contact {
+  margin-top: 18px;
+}
+
+.privacy-contact a {
+  color: #4d9f19;
+  font-weight: 800;
+}
+
 .contact-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(360px, 0.98fr);
@@ -7568,6 +7647,23 @@ a {
 
   .contact-main {
     padding: 100px 0 72px;
+  }
+
+  .privacy-main {
+    padding: 100px 0 72px;
+  }
+
+  .privacy-card {
+    padding: 34px 24px;
+  }
+
+  .privacy-card h1 {
+    font-size: 40px;
+    line-height: 1.05;
+  }
+
+  .privacy-section-grid {
+    grid-template-columns: 1fr;
   }
 
   .contact-form-card {
